@@ -248,7 +248,10 @@ from FILME
 
  -- Exercício 20
 
-  select count (*) 
+  select CATEGORIA.NOME_CATEGORIA, COUNT (FILME.COD_FILME) as quantidadefilmes
+  from CATEGORIA 
+  left join FILME  on CATEGORIA.COD_CATEGORIA = FILME.COD_CATEGORIA
+  group by CATEGORIA.NOME_CATEGORIA;
 
  
 
