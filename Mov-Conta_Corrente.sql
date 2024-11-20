@@ -1,0 +1,3 @@
+use MOV_CONTA_CORRENTE
+
+select * from USUARIOS
